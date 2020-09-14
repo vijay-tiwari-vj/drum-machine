@@ -1,13 +1,62 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5a751;
+}
+
+.drum-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #f4f4ea;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.drum-pad:active {
+  opacity: 0.9;
+  transform: scale(0.98);
+}
+
+.active {
+  opacity: 0.9;
+  transform: scale(0.98);
 }
